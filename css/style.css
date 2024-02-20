@@ -18,6 +18,7 @@
 body {
     display: flex;
     justify-content: center;
+    border: 1px solid grey;
 }
 
 header {
@@ -25,7 +26,7 @@ header {
     width:1440px;
     max-width: 1440px;
     margin-top: 0;
-    margin-left:0;
+    margin-left:-50px;
     border: 1px solid red;
     display: flex;
     flex-direction: row;
@@ -38,13 +39,17 @@ nav {
 }
 footer {
     height: 163px;
-    width: 1340px;
-    color: f2f2f2;
+    max-width: 1440px;
+    background-color: #f2f2f2;
     padding: 0px 50px 0px 50px;
     margin: auto;
     border: 1px solid red;
 
 }
+
+/************************************************************
+    STYLE FOR HEADER 
+************************************************************/
 .bookieLogo {
   background-color: black;
   color: white;
@@ -64,11 +69,15 @@ footer {
     border: 1px solid blue;
 }
 
-.main-container {
+/***********************************************************
+ MAIN
+ ***********************************************************/
+.main-container:not(header) {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    border: 1px solid cyan;
 }
 
 a {
@@ -76,38 +85,51 @@ a {
     text-decoration: none;
 }
 
+/***********************************************************
+SECTION
+ ***********************************************************/
 .section-title {
     margin: 0;
     font-size: 22px;
+    border : 1px solid brown;
 }
 
+/*CARD */
 .card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    border : 1px solid orange;
 }
 
 .card img {
     object-fit: cover;
+    border: 1px solid pink;
 }
 
 .card-title {
     font-size: 16px;
+    border : 1px solid salmon;
 }
 
 .euro {
     font-weight: 700;
+    border: 1px solid gold;
 }
 
 .neutral-star {
     color: var(--main-bg-color)
+    border: 1px solid sienna;
 }
 
-/****** Hebergements And Populaires ***********/
+/***********************************************************
+Hebergements And Populaires
+ ***********************************************************/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    border: 1px solid deeppink;
 }
 
 .hebergements-and-populaires section {
@@ -115,27 +137,32 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    border : 1px solid saddlebrown;
 }
 
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    border: 1px solid sandybrown;
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    border: 1px solid forestgreen;
 }
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid purple;
 }
 
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    border: 1px solid indigo;
 }
 
 .populaires-cards img {
@@ -143,6 +170,7 @@ a {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border: 1px solid black;
 }
 
 .populaires-cards .card-content {
@@ -152,27 +180,35 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    border: 1px solid powderblue;
 }
 
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    border: 1px solid springgreen;
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
+    border : 1px solid crimson;
 }
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    border: 1px solid slateblue
 }
 
+/***********************************************************
+ FOOTER
+ ***********************************************************/
 
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
+/***********************************************************
+Media queries
+ ***********************************************************/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
