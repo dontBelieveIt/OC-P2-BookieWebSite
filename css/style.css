@@ -5,6 +5,8 @@
 
 :root {
     --main-color: #0065FC;
+    --light-blue: #DEEBFF; 
+    --light-brown: #D9d9d9;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
@@ -21,26 +23,45 @@ body {
 header {
     height:79px;
     width:1440px;
+    max-width: 1440px;
     margin-top: 0;
     margin-left:0;
     border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav {
     width: 344px;
-    height: Hug (35px);
-    left: 1096px;
-    padding: 0px, 50px, 0px, 50px;
-    gap: 68px;
+    border: 1px solid green;
 }
 footer {
     height: 163px;
     width: 1340px;
     color: f2f2f2;
-    padding: 0px, 50px, 0px, 50px;
+    padding: 0px 50px 0px 50px;
     margin: auto;
     border: 1px solid red;
 
+}
+.bookieLogo {
+  background-color: black;
+  color: white;
+}
+.logoSite {
+    padding: 30px 50px 30px 50px;
+    border: 1px solid yellow;
+}
+.navBar {
+    display: flex;
+    justify-content : space-evenly;
+    flex-direction: row;
+    border: 1px solid red;
+}
+.navItems {
+    display: inline-block;
+    border: 1px solid blue;
 }
 
 .main-container {
