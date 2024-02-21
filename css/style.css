@@ -100,17 +100,31 @@ a {
     
   }
   .search-bar {
-    display: inline-block;
+    display: flex;
     border: 1px solid green;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
   }
-  #recherche-label {
+  #icone-recherche {
+    color:black;
+    background-color: var(--main-bg-color);
     display: inline;
   }
-  #rechercher-ville {
+  input#rechercher-villes {
     display: inline;
+    height: inherit;
+    border: none;
   }
   #recherche-submit-button {
     display: inline;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    height: 50px; 
+    left: 0;
   }
   
   .filter-bar {
