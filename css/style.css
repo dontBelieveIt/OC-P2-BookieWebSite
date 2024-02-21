@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: center;
     border: 1px solid grey;
+    font-size: 16px;
 }
 
 header {
@@ -71,13 +72,15 @@ footer {
 }
 
 /***********************************************************
- MAIN
+ MAIN CONTAINER
  ***********************************************************/
 .main-container:not(header) {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
+    justify-content: center;
     border: 1px solid cyan;
 }
 
@@ -89,12 +92,9 @@ a {
  INFO GROUP : RESEARCH BAR, FILTERS
  ***********************************************************/
  .info-group {
-    width : 1340px; 
     height: 281px; 
-    gap: 35px;
     border: 1px solid red;
-    margin : 0px 50px 0px 50px;
-    padding: 50px;
+    margin : auto;
   }
   .headline {
     
@@ -125,6 +125,7 @@ SECTION
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: 700; 
     border : 1px solid brown;
 }
 
@@ -144,6 +145,7 @@ SECTION
 
 .card-title {
     font-size: 16px;
+    font-weight: 700;
     border : 1px solid salmon;
 }
 
@@ -232,6 +234,12 @@ Hebergements And Populaires
     margin-bottom: 5px;
     border: 1px solid slateblue
 }
+
+/****** Activités à Marseille ***********/
+.activite-marseille {
+
+}
+
 
 /***********************************************************
  FOOTER

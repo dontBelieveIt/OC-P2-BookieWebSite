@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -33,34 +32,34 @@
 
         <!-- MAIN BODY -->
         <main>
-            <div class="info-group">
+            <section class="info-group">
                 <div class="headline">
-                    <h2>Trouvez votre logements pour des vacances de rêve</h2> 
+                    <div class="section-title">Trouvez votre logements pour des vacances de rêve</div> 
                     En plein centre-ville ou en pleine nature
-                  </div>
-                  <div class="search-bar">
-                    <form method="get" action="">
-                        <p>
-                            <label for="recherche" id="recherche-label"><span class="material-symbols-outlined">location_on</span></label>
-                            <input type="text" name="recherche" id="rechercher-villes" placeholder="Marseille, France" size="30" maxlength="20">
-                            <input type="submit" id="recherche-submit-button">
-                        </p>
-                    </form>
-                  </div>
-                  <div class="filter-bar">
-                    Filtres : économique familial romantique nos pépites
-                  </div>
-                  <div class="info-bar">
-                    i : plus de 500 logement sont disponibles dans cette ville
-                  </div>            
                 </div>
+                <div class="search-bar">
+                <form method="get" action="">
+                    <p>
+                        <label for="recherche" id="recherche-label"><i class="fa-solid fa-location-dot"></i></label>
+                        <input type="text" name="recherche" id="rechercher-villes" placeholder="Marseille, France" size="30" maxlength="20">
+                        <input type="submit" id="recherche-submit-button" value="Rechercher ">
+                    </p>
+                </form>
+                </div>
+                <div class="filter-bar">
+                Filtres : économique familial romantique nos pépites
+                </div>
+                <div class="info-bar">
+                i : plus de 500 logement sont disponibles dans cette ville
+                </div>
+            </section>            
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
+                        <div class="section-title">Les plus populaires</div>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
@@ -123,31 +122,28 @@
                         </a>
                     </div>
                 </section>
-                <!-- <section class="hebergement-marseille">
-                    Hébergements à Marseille
-                </section>
-                <section class="activite-marseille">
-                    Activités à Marseille
-                </section>
-            </div> -->
+            </div> 
+            <section class="activite-marseille">
+                <div class="section-title">Activités à Marseille</div>
+            </section>
         </main>
 
         <!-- FOOTER ! -->
         <footer>
             <div class="footer-container">
                 <div class="a-propos">
-                    <h4>A propos</h4>
+                    <div class="card-title">A propos</div>
                     <span class="footer-content">Fonctionnement du site</span>
                     <span class="footer-content">Conditions générales</span>
                     <span class="footer-content">Données et confidentialité</span>
                 </div>
                 <div class="a-propos">
-                    <h4>Nos hébérgements</h4>
+                    <div class="card-title">Nos hébérgements</div>
                     <span class="footer-content">Chartes qualiité</span>
                     <span class="footer-content">Proposez votre hôtel</span>
                 </div>
                 <div class="a-propos">
-                    <h4>Assistance</h4>
+                    <div class="card-title">Assistance</div>
                     <span class="footer-content">Centre d'aide</span>
                     <span class="footer-content">Nous contacter</span>
                 </div>
