@@ -20,6 +20,7 @@ body {
     justify-content: center;
     border: 1px solid grey;
     font-size: 16px;
+    line-height: 18.78px;
 }
 
 header {
@@ -49,6 +50,31 @@ footer {
 
 }
 
+/***********************************************************
+ MAIN CONTAINER
+ ***********************************************************/
+ .main-container:not(header) {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 1px solid cyan;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--main-color); 
+    transition: .8s;
+}
+a:active {
+    color: var(--main-color);   
+}
+
 /************************************************************
     STYLE FOR HEADER 
 ************************************************************/
@@ -72,67 +98,137 @@ footer {
 }
 
 /***********************************************************
- MAIN CONTAINER
- ***********************************************************/
-.main-container:not(header) {
-    width: 100%;
-    max-width: 1440px;
-    min-width: 320px;
-    padding: 0 50px;
-    box-sizing: border-box;
-    justify-content: center;
-    border: 1px solid cyan;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-/***********************************************************
  INFO GROUP : RESEARCH BAR, FILTERS
  ***********************************************************/
  .info-group {
-    height: 281px; 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin : auto;
-  }
-  .headline {
-    
-  }
-  .search-bar {
+}
+/* .headline {
+
+} */
+
+/****** Search bar ***********/
+.search-bar {
     display: flex;
-    border: 1px solid green;
-    height: 50px;
+    position : relative;
+    height: 51px;
+    width: 500px;
     justify-content: flex-start;
     align-items: center;
-  }
-  #icone-recherche {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+#icone-recherche {
     color:black;
-    background-color: var(--main-bg-color);
+    display: flex;
+    position : relative; 
+    left: 18px;
+    font-size: 22px;
+}
+
+.search-bar-icon {
+    display: inline-flex;
+    background-color: #F2F2F2;
+    width: 50px; 
+    height: 54px;
+    position: relative; 
+    right:0;
+    margin: 0;
+    top: 4px;
+    align-items: center;
+    border-radius: 15px 0px 0px 15px;
+}
+.searchTerm {
+    color: black;
+    font-weight: bold;
+}
+
+input#rechercher-villes {
     display: inline;
-  }
-  input#rechercher-villes {
+    height: 50px;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #F2F2F2; 
+    border-bottom: 1px solid #F2F2F2;
+    position: relative;
+    margin: 0;
+    left: -4px; 
+    right: 0;
+}
+input[type="text"]::placeholder {
+    color: black;
+    font-size: 16px;
+}
+#recherche-submit-button {
     display: inline;
-    height: inherit;
-    border: none;
-  }
-  #recherche-submit-button {
-    display: inline;
-    background-color: var(--main-color);
+    background-color: #0065FC;
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 0px 15px 15px 0px;
-    height: 50px; 
-    left: 0;
-  }
+    height: 54px; 
+    position: relative;
+    margin: 0;
+    left: -8px;
+    bottom: 0px;
+    cursor: pointer;
+    text-align: center; 
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1em;
+}
   
-  .filter-bar {
-    
-  }
-  .info-bar {
-    
-  }
+.filter-bar {
+    height: 50px; 
+    width: 758px;
+    display: flex; 
+    position: relative;
+    align-items: center;
+    justify-content: space-between; 
+}
+.filter-button {
+    background-color: transparent; 
+    padding: 4px 19px 4px 19px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid var(--light-brown);
+    font-size: 17px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter-button:hover {
+    background-color: #DEEBFF;
+    transition: 0.8s;
+}
+#filter-button-icon {
+    color: #0065FC;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.info-bar {
+    display: flex; 
+    align-items: center;
+    margin-top: 30px;
+    font-size: 16px;
+    font-style: italic;
+}
+#info-bar-icon {
+    border: 1px solid var(--light-brown); 
+    border-radius: 20px;
+    height: 24px; 
+    width: 24px; 
+    font-size: 10px;
+    text-align: center; 
+    line-height: 19px;
+    justify-content: center; 
+    align-self: center;
+    margin-right: 4px;
+}
 /***********************************************************
 SECTION
  ***********************************************************/
@@ -169,7 +265,7 @@ SECTION
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
     border: 1px solid sienna;
 }
 
@@ -268,7 +364,7 @@ Hebergements And Populaires
     display:grid;
     max-height: 163px;
     height: 100%;
-    grid-template-colums: 1fr; 
+    grid-template-columns: 1fr; 
     grid-template-rows: 72px 1fr 1fr 1fr;
     border: 1px solid green;
   }
