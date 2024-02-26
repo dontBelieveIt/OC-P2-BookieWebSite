@@ -1,3 +1,22 @@
+/* CONTENT INFORMATION
+GENERAL : root, body, a, h1... 
+MAINT CONTAINER / For Header, Main (sections) and Footer part 
+HEADER, NAV, FOOTER
+**style for header
+INFO GROUP: research bar, filters, info... 
+SECTIONS : section title (to be edited and simplified later) 
+CARD : 
+HEBERGEMENT A MARSEILLE : card + container for the section "Hébergements à Marseille" 
+HEBERGEMENT AND POPULAR : It's the section class, the container of the hebergement section 
+ACTIVITES A MARSEILLE : card + container for the section "Activité à Marseille" 
+FOOTER 
+MEDIA QUERIES: 
+**Media Queries : Medium devices (tablets, less/equal than 1024px); 
+**Media Queries : Small devices (phones, less than 768px)
+***********************************************************************************************************************************/
+
+
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -22,17 +41,6 @@ body {
     line-height: 18.78px;
 }
 
-/***********************************************************
- MAIN CONTAINER
- ***********************************************************/
- .main-container:not(header) {
-    width: 100%;
-    max-width: 1440px;
-    min-width: 320px;
-    padding: 0 50px;
-    box-sizing: border-box;
-    justify-content: center;
-}
 
 a {
     color: inherit;
@@ -47,6 +55,32 @@ a:active {
 }
 
 /****** H1, H2, H3, H4 ***********/
+h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700; 
+    padding-bottom: inherit;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/***********************************************************
+ MAIN CONTAINER
+ ***********************************************************/
+ .main-container:not(header) {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    justify-content: center;
+}
 
 /***********************************************************
  HEADER, NAV, FOOTER
@@ -111,9 +145,6 @@ footer {
  .info-group {
     /* border: 1px solid red; */
     margin : auto;
-    width: 1440px; 
-    max-width: 1440px; 
-    min-width: 280px;
 }
 
 /****** Search bar ***********/
@@ -236,14 +267,6 @@ input[type="text"]::placeholder {
     align-self: center;
     margin-right: 4px;
 }
-/***********************************************************
-SECTION
- ***********************************************************/
-.section-title {
-    margin: 0;
-    font-size: 22px;
-    font-weight: 700; 
-}
 
 /***********************************************************
  CARD 
@@ -268,12 +291,6 @@ SECTION
     border: 1px solid pink;
 }
 
-.card-title {
-    font-size: 16px;
-    font-weight: 700;
-    border : 1px solid salmon;
-}
-
 .euro {
     font-weight: 700;
     border: 1px solid gold;
@@ -288,9 +305,12 @@ SECTION
 HEBERGEMENT A MARSEILLE
  ***********************************************************/
  .hebergement-container{
-    display: grid; 
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:first baseline;
+    align-items: unset;
+    gap: 40px 0px;
  }
 .hebergement-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -447,7 +467,7 @@ Hebergements And Populaires
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /***********************************************************
-Media queries
+MEDIA QUERIES
  ***********************************************************/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
