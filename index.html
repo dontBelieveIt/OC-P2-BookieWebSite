@@ -18,13 +18,13 @@
     <div class="main-container">
         <!-- HEADER -->
         <header>
-            <div class="logoSite">
+            <div class="header__logo">
                 <img src="./images/logo/Booki.png" alt="Logo Booki" height="19px">
             </div>
             <nav>
                 <div class="navBar">
-                        <button class="button-navigation"><a href="#hebergements">Hébergements</a></button>
-                        <button class="button-navigation"><a href="#activite">Activités</a></button>
+                        <button class="navBar__btn"><a href="#hebergements">Hébergements</a></button>
+                        <button class="navBar__btn"><a href="#activite">Activités</a></button>
                 </div>
                
             </nav>
@@ -32,37 +32,37 @@
 
         <!-- MAIN BODY -->
         <main>
-            <section class="info-group">
+            <section class="box__section-info">
                 <h1>Trouvez votre logements pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
-                <div class="search-bar">
+                <div class="info__searchBar">
                     <form method="get" action="">
                         <p>
-                        <div class="search-bar-icon">  
-                        <label for="recherche" id="recherche-label"><i class="fa-solid fa-location-dot" id="icone-recherche"></i></label>
+                        <div class="info__searchBar-mapIcon--div">  
+                        <label for="recherche" id="recherche-label"><i class="fa-solid fa-location-dot" id="mapIcon"></i></label>
                     </div>
-                            <input type="text" class="searchTerm" name="recherche" id="rechercher-villes" placeholder="Marseille, France" size="30" maxlength="20">
-                            <input type="submit" id="recherche-submit-button" value="Rechercher">
+                            <input type="text" name="recherche" id="searchBar__text" placeholder="Marseille, France" size="30" maxlength="20">
+                            <input type="submit" id="searchBar__submit-btn" value="Rechercher">
                         </p>
                     </form>
                 </div>
-                <div class="filter-bar">
+                <div class="filter-box">
                     <h3>Filtres</h3> 
-                    <button class="filter-button">
-                        <i class="fa-solid fa-money-bill-wave" id="filter-button-icon"></i> Économique
+                    <button class="filter-btn">
+                        <i class="fa-solid fa-money-bill-wave" id="filter-btn-icon"></i> Économique
                     </button>
-                        <button class="filter-button">
-                        <i class="fa-solid fa-person"  id="filter-button-icon"></i> Familial
+                        <button class="filter-btn">
+                        <i class="fa-solid fa-person"  id="filter-btn-icon"></i> Familial
                         </button>
-                        <button class="filter-button">
-                        <i class="fa-solid fa-heart" id="filter-button-icon"></i> Romantique
+                        <button class="filter-btn">
+                        <i class="fa-solid fa-heart" id="filter-btn-icon"></i> Romantique
                         </button>
-                        <button class="filter-button">
-                        <i class="fa-solid fa-fire" id="filter-button-icon"></i> Nos pépites
+                        <button class="filter-btn">
+                        <i class="fa-solid fa-fire" id="filter-btn-icon"></i> Nos pépites
                         </button>
                 </div>
-                <div class="info-bar">
-                    <i class="fa-solid fa-info" id="info-bar-icon"></i> Plus de 500 logement sont disponibles dans cette ville
+                <div class="info-box">
+                    <i class="fa-solid fa-info" id="info-box-icon"></i> Plus de 500 logement sont disponibles dans cette ville
                 </div>
             </section>            
             <div class="hebergements-and-populaires">

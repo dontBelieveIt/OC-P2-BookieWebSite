@@ -1,4 +1,7 @@
 /* CONTENT INFORMATION
+
+/!\Element classed from top to bottom
+
 GENERAL : root, body, a, h1... 
 MAINT CONTAINER / For Header, Main (sections) and Footer part 
 HEADER, NAV, FOOTER
@@ -30,17 +33,12 @@ MEDIA QUERIES:
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
-
 body {
     display: flex;
     justify-content: center;
     font-size: 16px;
     line-height: 18.78px;
 }
-
 
 a {
     color: inherit;
@@ -52,6 +50,11 @@ a:hover {
 }
 a:active {
     color: var(--main-color);   
+}
+
+
+.fa-solid {
+    color: var(--main-color);
 }
 
 /****** H1, H2, H3, H4 ***********/
@@ -111,11 +114,7 @@ footer {
 }
 
 /******STYLE FOR HEADER ***********/
-.bookieLogo {
-  background-color: black;
-  color: white;
-}
-.logoSite {
+.header__logo {
     padding: 30px 50px 30px 50px;
 }
 .navBar {
@@ -123,18 +122,18 @@ footer {
     justify-content : space-evenly;
     flex-direction: row;
 }
-.button-navigation {
+.navBar__btn {
     display: inline-block;
     background-color: transparent;
     border: none;
     height: 33px; 
     text-align: end;
 }
-.button-navigation:hover {
+.navBar__btn:hover {
     color: var(--main-color);
     transition: .8s;
 }
-.button-navigation:active {
+.navBar__btn:active {
     color: var(--main-color); 
     border-top: 3px solid var(--main-color); 
 }
@@ -142,13 +141,14 @@ footer {
 /***********************************************************
  INFO GROUP : RESEARCH BAR, FILTERS, INFO   
  ***********************************************************/
- .info-group {
+ .box__section-info {
     /* border: 1px solid red; */
     margin : auto;
 }
 
 /****** Search bar ***********/
-.search-bar {
+/* div pour la barre de recherche de la section info */
+.info__searchBar {
     display: flex;
     position : relative;
     height: 51px;
@@ -158,14 +158,8 @@ footer {
     margin-top: 35px;
     margin-bottom: 35px;
 }
-#icone-recherche {
-    color:black;
-    display: flex;
-    position : relative; 
-    left: 18px;
-    font-size: 22px;
-}
-.search-bar-icon {
+/* éléments de la barre de recherche de la section info, de droite à gauche */
+.info__searchBar-mapIcon--div {
     display: inline-flex;
     background-color: #F2F2F2;
     width: 50px; 
@@ -177,12 +171,15 @@ footer {
     align-items: center;
     border-radius: 15px 0px 0px 15px;
 }
-.searchTerm {
-    color: black;
-    font-weight: bold;
+#mapIcon {
+    color:black;
+    display: flex;
+    position: relative; 
+    left: 18px;
+    font-size: 22px;
 }
 
-input#rechercher-villes {
+input#searchBar__text {
     display: inline;
     height: 50px;
     border-right: none;
@@ -193,12 +190,15 @@ input#rechercher-villes {
     margin: 0;
     left: -4px; 
     right: 0;
+    color: black;
+    font-weight: bold;
 }
 input[type="text"]::placeholder {
     color: black;
     font-size: 16px;
 }
-#recherche-submit-button {
+
+#searchBar__submit-btn {
     display: inline;
     background-color: #0065FC;
     color: white;
@@ -217,7 +217,8 @@ input[type="text"]::placeholder {
     padding: 1em;
 }
  /******FILTERS & FILTER BUTTONS***********/ 
-.filter-bar {
+ /* box/div contenant les éléments de la barre de filtres de recherches  */
+.filter-box {
     height: 50px; 
     width: 758px;
     display: flex; 
@@ -225,7 +226,7 @@ input[type="text"]::placeholder {
     align-items: center;
     justify-content: space-between; 
 }
-.filter-button {
+.filter-btn {
     background-color: transparent; 
     padding: 4px 19px 4px 19px;
     height: 50px;
@@ -238,24 +239,24 @@ input[type="text"]::placeholder {
     display: flex;
     flex-wrap: wrap;
 }
-.filter-button:hover {
+.filter-btn:hover {
     background-color: #DEEBFF;
     transition: 0.8s;
 }
-#filter-button-icon {
+#filter-btn-icon {
     color: #0065FC;
     font-size: 22px;
     margin-right: 10px;
 }
 /******INFO LINE***********/
-.info-bar {
+.info-box {
     display: flex; 
     align-items: center;
     margin-top: 30px;
     font-size: 16px;
     font-style: italic;
 }
-#info-bar-icon {
+#info-box-icon {
     border: 1px solid var(--light-brown); 
     border-radius: 20px;
     height: 24px; 
