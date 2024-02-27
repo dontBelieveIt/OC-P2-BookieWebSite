@@ -140,7 +140,6 @@ footer {
  INFO GROUP : RESEARCH BAR, FILTERS, INFO   
  ***********************************************************/
  .box__section-info {
-    /* border: 1px solid red; */
     margin : auto;
 }
 
@@ -227,6 +226,7 @@ input:focus::placeholder {
     align-items: center;
     justify-content: space-between; 
 }
+/* bouton de la barre de filtre */
 .filter-btn {
     background-color: transparent; 
     padding: 4px 19px 4px 19px;
