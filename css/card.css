@@ -58,7 +58,7 @@ SECTION /HEBERGEMENT A MARSEILLE
  ***********************************************************/
  /****** section > container/box > elements ***********/
 /* It's the section class, the container of the hebergement section */
-.hergement-section-class {
+.hebergement-section-class {
     width: 65%;
 }
  /* box pour la section hébergement à Marseille, without the "Afficher plus" and title of the section */
@@ -166,7 +166,7 @@ SECTION /SPONSORED/POPULAIRES
 .activite-card {
     transition: 0.3s;
     width: 297px;
-    min-width: 280px;
+    min-width: 320px;
     height: 439px; 
     padding: 5px 0px 15px 0px;
 }

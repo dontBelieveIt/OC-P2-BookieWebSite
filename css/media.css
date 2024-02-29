@@ -53,7 +53,12 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
         margin: 0;;   
     }
     footer {
-        height: 163px;
+        height: 100%;
+        width: 110%;
+        padding-left: 20px;
+        left: -17px;
+        min-width: 320px;
+        position: relative;
     }
     /******STYLE FOR HEADER ***********/
     .header__logo {
@@ -164,5 +169,152 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
         margin-top: 100px;
         margin-bottom: 50px;
     }
+    /***********************************************************
+    COMMON CONTENT FOR CARD
+    ***********************************************************/
+    /* following refactoring, container for section */
+    .cards-container {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    /* following refactoring : card common points */
+    .card {
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .card-img {
+        object-fit: cover;
+        outline: 5px solid #FFF;
+        outline-offset: -5px;
+    }
+    /* euro symbol for the span euro */
+    .euro::after {
+        content: "€";
+        font-weight: 700;
+    }
+    /* stars note, default definied in the .fa-solid of the ./css/style.css file, as the main-color */
+    .neutral-star {
+        color: var(--main-bg-color);
+    }
+    /***********************************************************
+    Hebergements And Populaires Box Div
+    ***********************************************************/
+    /* Div for both the section : hebergement à Marseille and the Popular/Sponsored section */
+    .hebergements-and-populaires__box {
+        flex-direction: column;
+        width: 114%;
+        margin: 0;
+        border-radius: 0px;
+        position: relative;
+        left: -19px;
+        right: -10px;
+    }
+
+    .hebergements-and-populaires__box section {
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 0px;
+        box-sizing: border-box;
+    }
+    /***********************************************************
+    SECTION /HEBERGEMENT A MARSEILLE
+    ***********************************************************/
+    /****** section > container/box > elements ***********/
+    /* It's the section class, the container of the hebergement section */
+    .hebergement-section-class {
+        width: 100%;
+        order: 2;
+    }
+
+    /* cards */
+    /* style pour l'article (box) hebergement card */
+    .hebergement-card {
+        width: 100%;
+        min-width: 320px;
+    }
+    .hebergement-img {
+        width: 100%;
+        min-width: 320px; 
+    }
+    /***********************************************************
+    SECTION /SPONSORED/POPULAIRES 
+    ***********************************************************/
+    /* box for the sponsored section */
+    .sponsored-section-class {
+        width: 100%;
+        order: 1;
+    }
+    #sponsored-section-box {
+        background-color: var(--main-bg-color);
+    }
+
+    /* cards */
+    .sponsored-cards {
+        width: 100%;
+        min-width: 320px;
+    }
+
+    .sponsored-cards-img {
+        height: 136px;
+        width: 123px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    /***********************************************************
+    ACTIVITE A MARSEILLE
+    ***********************************************************/
+    .activite-marseille-section {
+        min-width: 320px;
+        width: 100%;
+    }
+    .activite-container{
+        display: flex; 
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* individual card for the activité à Marseille section */
+    .activite-card {
+        width: 100%;
+        min-width: 320px;
+        height: 200px; 
+        outline: none;
+    }
+    .activite-img {
+        width: inherit; 
+        height: 141px;
+        outline: none;
+    }
+
+    .activite-card__description {
+        padding: 2px 16px;   
+        line-height: 1.8;
+
+    }
+    /***********************************************************
+    FOOTER 
+    ***********************************************************/
+    .footer-container {
+        width: 100%;
+        min-width: 320px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+      .a-propos {
+        display:grid;
+        max-height: 163px;
+        height: 100%;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 72px 1fr 1fr 1fr;
+      }
+      .footer-content {
+        display: inline-block; 
+      } 
 
 }
