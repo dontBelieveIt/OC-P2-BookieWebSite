@@ -134,7 +134,7 @@ MEDIA QUERIES
         display: none;
     }
    #searchBar__submit-btn-phone {
-    display: inline;
+    display: inline-block;
     background-color: #0065FC;
     color: white;
     font-weight: bold;
@@ -150,9 +150,11 @@ MEDIA QUERIES
     cursor: pointer;
     text-align: center;
     }   
-    #searchBar__submit-btn-phone:after {
-        content: "\f002";
+    #magnifying-glass {
+        color: white;
+        font-size: 17px;
     }
+ 
     /******FILTERS & FILTER BUTTONS***********/ 
  /* box/div contenant les éléments de la barre de filtres de recherches  */
 .filter-box {
@@ -162,6 +164,13 @@ MEDIA QUERIES
 .filter-btn {
     height: 50px;
     width: 45%;
+}
+.filter-phone {
+    width: 100%; 
+    display: block;
+}
+#desktop-title {
+    display: none;
 }
 
 }

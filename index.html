@@ -44,12 +44,14 @@
                         <label for="recherche" id="recherche-label"><i class="fa-solid fa-location-dot" id="mapIcon"></i></label>
                     </div>
                             <input type="text" name="recherche" id="searchBar__text" placeholder="Marseille, France" size="30" maxlength="20">
-                            <input type="submit" id="searchBar__submit-btn" value="Rechercher"><input type="submit" id="searchBar__submit-btn-phone" value="">
+                            <input type="submit" id="searchBar__submit-btn" value="Rechercher"><button id="searchBar__submit-btn-phone"><i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i></button>
                         </p>
                     </form>
                 </div>
-                <div class="filter-box">
-                    <h3>Filtres</h3> 
+                
+                    <div class="filter-phone"><h3>Filtres</h3></div> 
+                    <div class="filter-box">
+                        <h3 id="desktop-title">Filtres</h3>
                     <button class="filter-btn">
                         <i class="fa-solid fa-money-bill-wave" id="filter-btn-icon"></i> Économique
                     </button>
