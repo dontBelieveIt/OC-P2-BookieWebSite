@@ -2,16 +2,11 @@
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /***********************************************************
 MEDIA QUERIES
-**Media Queries : Medium devices (tablets, less/equal than 1024px); 
 **Media Queries : Small devices (phones, less than 768px)
  ***********************************************************/
  /***********************************************************
-MEDIUM DEVICES 
+MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format media queries. 
  ***********************************************************/
-/* @media (max-width: 1024px) {
- 
-} */
-
 /***********************************************************
 SMALL DEVICES (PHONES, LESS THAN 768px)
  ***********************************************************/

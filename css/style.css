@@ -9,10 +9,8 @@ HEADER, NAV, FOOTER
 INFO GROUP: research bar, filters, info... 
 CARD : see the css file "css/card.css" for the card section
 FOOTER 
-MEDIA QUERIES: see the css file "css/media.css" for the responsive stylesheet
+MEDIA QUERIES: see the css file "css/media768px.css" (phones) and "media1024px.css" (tablets) for the responsive stylesheet
 ***********************************************************************************************************************************/
-
-
 
 /****** General ***********/
 * {
