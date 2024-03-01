@@ -165,39 +165,6 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
         margin-bottom: 50px;
     }
     /***********************************************************
-    COMMON CONTENT FOR CARD
-    ***********************************************************/
-    /* following refactoring, container for section */
-    .cards-container {
-        display:flex;
-        flex-wrap: wrap;
-    }
-
-    /* following refactoring : card common points */
-    .card {
-        border-radius: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    }
-    .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-
-    .card-img {
-        object-fit: cover;
-        outline: 5px solid #FFF;
-        outline-offset: -5px;
-    }
-    /* euro symbol for the span euro */
-    .euro::after {
-        content: "€";
-        font-weight: 700;
-    }
-    /* stars note, default definied in the .fa-solid of the ./css/style.css file, as the main-color */
-    .neutral-star {
-        color: var(--main-bg-color);
-    }
-    /***********************************************************
     Hebergements And Populaires Box Div
     ***********************************************************/
     /* Div for both the section : hebergement à Marseille and the Popular/Sponsored section */

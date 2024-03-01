@@ -272,7 +272,6 @@ input:focus::placeholder {
     align-self: center;
     margin-right: 4px;
 }
-
 .filter-phone {
     display: none;
 }

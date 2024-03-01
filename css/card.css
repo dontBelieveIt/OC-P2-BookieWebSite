@@ -41,7 +41,7 @@ COMMON CONTENT FOR CARD
 Hebergements And Populaires Box Div
  ***********************************************************/
  /* Div for both the section : hebergement à Marseille and the Popular/Sponsored section */
- .hebergements-and-populaires__box {
+.hebergements-and-populaires__box {
     display: flex;
     justify-content: space-between;
 }
