@@ -22,6 +22,8 @@ COMMON CONTENT FOR CARD
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    transition: 0.3s;
+    display: flex; 
  }
  .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -82,9 +84,9 @@ SECTION /HEBERGEMENT A MARSEILLE
     transition: 0.3s;
     width: 250px;
     height: 207px; 
+    display: block;
 }
 .hebergement-img {
-    width: inherit; 
     height: 60%;
     border-radius: 20px 20px 0 0;
 }
@@ -118,14 +120,12 @@ SECTION /SPONSORED/POPULAIRES
 
 /* cards */
 .sponsored-cards {
-    display: flex; 
     flex-direction: row;
     width: 369px;
     height: 136px;
 }
 
 .sponsored-cards-img {
-    height: inherit;
     width: 33.33%;
     border-radius: 20px 0px 0px 20px;
 }
@@ -146,29 +146,39 @@ SECTION /SPONSORED/POPULAIRES
 /***********************************************************
  ACTIVITE A MARSEILLE
  ***********************************************************/
-.activite-marseille-section {
+ .activite-marseille-section {
     min-width: 280px;
     max-width: 1440px;
+}
+.activite-marseille-section section {
+    margin-top: 30px;
     padding: 30px;
 }
-.activite-container{
-    display: grid; 
-    grid-template-rows: 1fr;    
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.activite-container {
+    display: flex; 
+    width: 100%;
+    max-width: 1440px;
+    min-width: 1024px;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     gap: 30px;
  }
  /* individual card for the activité à Marseille section */
 .activite-card {
-    transition: 0.3s;
-    width: 297px;
-    min-width: 320px;
-    height: 439px; 
-    padding: 5px 0px 15px 0px;
+    width: 297.5px;
+    height: 439px;
+    flex-direction: column;
 }
 .activite-img {
-    width: inherit; 
     height: 380px;
     border-radius: 20px 20px 0 0;
-    margin: auto; 
-    left: 5px;
+    outline: unset;
+    outline-offset: unset;
+}
+.activite-card__description {
+    padding: 0px 10px 0px 20px;
+    display: flex; 
+    align-items: center ;
 }
