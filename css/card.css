@@ -146,14 +146,14 @@ SECTION /SPONSORED/POPULAIRES
 /***********************************************************
  ACTIVITE A MARSEILLE
  ***********************************************************/
+#activite {
+    margin-top: 50px;
+}
  .activite-marseille-section {
     min-width: 280px;
     max-width: 1440px;
 }
-.activite-marseille-section section {
-    margin-top: 30px;
-    padding: 30px;
-}
+
 .activite-container {
     display: flex; 
     width: 100%;
