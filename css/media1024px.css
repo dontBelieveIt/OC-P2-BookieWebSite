@@ -3,7 +3,7 @@
 /***********************************************************
 MEDIA QUERIES
 **Media Queries : Medium devices (tablets, less/equal than 1024px); 
-**Media Queries : Small devices (phones, less than 768px)(
+**Media Queries : Small devices (phones, less than 767.98px)(
  ***********************************************************/
  /***********************************************************
 MEDIUM DEVICES 
@@ -14,20 +14,7 @@ MEDIUM DEVICES
     ***********************************************************/
     .main-container:not(header) {
         width: 100%;
-        min-width: 768px;
-        max-width: 1024px;
-        padding: 0px 50px;
-    }
-    /***********************************************************
-    HEADER, NAV, FOOTER   
-    ***********************************************************/
-    header {
-        max-width: 1024px;
-        min-width: 768px;
-    }   
-    footer {
-        max-width: 1024px;
-        min-width: 768px;
+        padding: 0px 10px;
     }
     /***********************************************************
     INFO GROUP : RESEARCH BAR, FILTERS, INFO   
@@ -48,10 +35,7 @@ MEDIUM DEVICES
         margin-right: 10px;
     }
     /* bouton de la barre de filtre */
-    .filter-phone {
-        width: 100%; 
-        display: block;
-    }
+    
     #desktop-title {
         display: none;
     }
@@ -129,8 +113,6 @@ MEDIUM DEVICES
     ACTIVITE A MARSEILLE
     ***********************************************************/
     .activite-marseille-section {
-        min-width: 768px;
-        max-width: 1024px;
         width: 100%;
         padding: 30px;
         display: flex; 
@@ -159,8 +141,6 @@ MEDIUM DEVICES
     ***********************************************************/
     .footer-container {
         width: 100%;
-        min-width: 768px;
-        max-width: 1024px;
       }
 
 }

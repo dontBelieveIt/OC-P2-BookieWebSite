@@ -11,52 +11,23 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
 SMALL DEVICES (PHONES, LESS THAN 768px)
  ***********************************************************/
 @media (max-width: 767.98px) {
-    /* h1 {
-        line-height: 1.3;
-    }
-    h2 {
-        font-size: 18px;
-        font-weight: 700;
-    }
-    h3 {
-        font-size: 16px;
-        font-weight: 700;
-    }
-    h4 {
-        font-size: 16px; 
-        font-weight: 400;
-    } */
     /***** MAIN CONTAINER (header, main, footer) */
     .main-container:not(header) {
-        width: 100%;
-        min-width: 320px;
-        max-width: 767.98px;
-        margin: auto;
-        padding: 0px 10px 0px 10px;
+        padding: 0px 15px;
     }
     /***** HEADER, NAV, FOOTER */
     header {
         width: 100%;
-        min-width: 320px;
-        max-width: 767.98px;
         align-items: center;
         flex-direction: column;
     }
     nav {
-        width: 100%;
-        margin: 0;  
-    }
-    footer {
-        height: 100%;
-        width: 110%;
-        padding-left: 20px;
-        left: -17px;
-        min-width: 320px;
+        width:100%;
         position: relative;
+        left: -15px;
     }
     /******STYLE FOR HEADER ***********/
     .header__logo {
-        padding: 30px;
         margin: auto;
     }
     .navBar {
@@ -66,16 +37,16 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
         flex-direction: row;
     }
     .navBar__btn {
-        display: flex;
-        justify-content: center;
-        border-bottom: 3px solid var(--light-brown);
-        padding-bottom: 10px;
-        flex-flow: column;
-        top: 0;
-        align-items: center;
-        width: 50%;
-        background-color: transparent;
         height: 33px;
+        width: 50%;
+        top: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-bottom: 15px;
+        align-items: center;
+        background-color: transparent;
+        border-bottom: 3px solid var(--light-brown);
     }
     .navBar__btn:hover {
         color: var(--main-color);
@@ -88,47 +59,43 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
         border-bottom: 3px solid var(--main-color); 
         border-top: none;
     }
-    
-    /******INFO GROUP ***********/
+    /***********************************************************
+    INFO GROUP : RESEARCH BAR, FILTERS, INFO   
+    ***********************************************************/
     .section-container__info {
-        margin : auto;
-    }
-     /******ELEMENT GROUP INFO ***********/
-     #info_centre-ville-nature {
-        line-height: normal;
-        margin-bottom: 50px;
-     }
-    
-    /****** Search bar ***********/
-    /* div pour la barre de recherche de la section info */
-    .info__searchBar {
         display: flex;
-        position: relative;
-        height: 51px;
-        width: 110%;
+        flex-direction: column;
+        gap: 20px;  
+    }
+    .info__searchBar {
+        display: inline-flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        width: 335px;
+        justify-content: flex-start;
         align-items: center;
-        margin: auto;
-        margin-bottom: 35px;
+    }
+    input#searchBar__text {
+        display: inline-flex;
+        width: 60%;
     }
     #searchBar__submit-btn {
         display: none;
     }
-    #searchBar__submit-btn-phone {
+    #searchBar__submit-btn-phone { 
+        height: 54px;
+        width: 54px;
+        margin: 0;
+        padding: 0;
         display: inline-block;
         background-color: #0065FC;
         color: white;
         font-weight: bold;
         border: none;
         border-radius: 15px;
-        height: 54px;
-        width: 54px;
         box-shadow: 0px 4px 4px 0px #00000040;
-        position: relative;
-        margin: 0;
-        left: -10px;
-        bottom: 0px;
         cursor: pointer;
-        text-align: center;
+        /* text-align: center; */
     }   
     #magnifying-glass {
         color: white;
@@ -138,14 +105,12 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
         /******FILTERS & FILTER BUTTONS***********/ 
     /* box/div contenant les éléments de la barre de filtres de recherches  */
     .filter-box {
-        width: 100%;
-        min-width: 320px;
+        display: inline-flex;
+        height: auto;
+        box-sizing: border-box;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 80px;    
     }
     .filter-phone {
-        width: 100%; 
         display: block;
     }
     #desktop-title {
@@ -155,33 +120,28 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     .filter-btn {
         padding: 4px 10px 4px 10px;
         font-size: 14px;
-        width: 48%;
+        width: 45%;
         margin-bottom: 15px;
-    }
-    /******INFO LINE***********/
-    .info-box {
-        margin-top: 100px;
-        margin-bottom: 50px;
     }
     /***********************************************************
     Hebergements And Populaires Box Div
     ***********************************************************/
     /* Div for both the section : hebergement à Marseille and the Popular/Sponsored section */
     .hebergements-and-sponsored__container {
+        display: flex;
         flex-direction: column;
-        width: 114%;
-        margin: 0;
+        width: auto;
+        left: -15px;
+        right: -15px;
         border-radius: 0px;
         position: relative;
-        left: -19px;
-        right: -10px;
     }
 
     .hebergements-and-sponsored__container section {
-        background-color: transparent;
-        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
         border-radius: 0px;
-        box-sizing: border-box;
     }
     /***********************************************************
     SECTION /HEBERGEMENT A MARSEILLE
@@ -197,11 +157,9 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     /* style pour l'article (box) hebergement card */
     .hebergement-card {
         width: 100%;
-        min-width: 320px;
     }
     .hebergement-img {
         width: 100%;
-        min-width: 320px; 
     }
     /***********************************************************
     SECTION /SPONSORED/POPULAIRES 
@@ -218,7 +176,6 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     /* cards */
     .sponsored-cards {
         width: 100%;
-        min-width: 320px;
     }
 
     .sponsored-cards-img {
@@ -231,7 +188,6 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     ACTIVITE A MARSEILLE
     ***********************************************************/
     .activite-marseille-section {
-        min-width: 320px;
         width: 100%;
     }
     .activite-container{
@@ -242,7 +198,6 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     /* individual card for the activité à Marseille section */
     .activite-card {
         width: 100%;
-        min-width: 320px;
         height: 200px; 
         outline: none;
     }
@@ -262,7 +217,6 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     ***********************************************************/
     .footer-container {
         width: 100%;
-        min-width: 320px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
