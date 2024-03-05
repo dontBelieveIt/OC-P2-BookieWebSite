@@ -61,6 +61,9 @@ SECTION /HEBERGEMENT A MARSEILLE
 .hebergement-section-class {
     width: 65%;
 }
+#hebergements-plus {
+    padding-top: 20px;
+}
  /* box pour la section hébergement à Marseille, without the "Afficher plus" and title of the section */
  .hebergement-section-box{
     justify-content: space-between;
@@ -83,13 +86,13 @@ SECTION /HEBERGEMENT A MARSEILLE
     border-radius: 20px 20px 0 0;
 }
 .hebergement-card__description {
+    height: 40%;
     padding: 2px 16px;   
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 .hebergement-card__description h3 {
     margin: 0;
- 
 }
 
 /***********************************************************

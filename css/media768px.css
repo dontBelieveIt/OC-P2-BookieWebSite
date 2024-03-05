@@ -188,7 +188,7 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     ***********************************************************/
     /****** section > container/box > elements ***********/
     /* It's the section class, the container of the hebergement section */
-    .hebergement-section-class {
+    .hebergement-section-container {
         width: 100%;
         order: 2;
     }
