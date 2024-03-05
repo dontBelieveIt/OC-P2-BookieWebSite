@@ -13,8 +13,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/card.css">
-    <link rel="stylesheet" href="./css/media768px.css">
-    <link rel="stylesheet" href="./css/media1024px.css">
+    <!-- <link rel="stylesheet" href="./css/media768px.css"> -->
+    <!-- <link rel="stylesheet" href="./css/media1024px.css"> -->
 </head>
 
 <body>
@@ -35,34 +35,34 @@
 
         <!-- MAIN BODY -->
         <main>
-            <section class="box__section-info">
-                <h1>Trouvez votre logements pour des vacances de rêve</h1>
-                <p id="info_centre-ville-nature">En plein centre-ville ou en pleine nature</p>
+            <section class="section-container__info">
+                <div>
+                    <h1>Trouvez votre logements pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
                 <div class="info__searchBar">
                     <form method="get" action="">
-                        <p>
                         <div class="info__searchBar-mapIcon--div">  
                         <label for="recherche" id="recherche-label"><i class="fa-solid fa-location-dot" id="mapIcon"></i></label>
                     </div>
                             <input type="text" name="recherche" id="searchBar__text" placeholder="Marseille, France" size="30" maxlength="20">
                             <input type="submit" id="searchBar__submit-btn" value="Rechercher"><button id="searchBar__submit-btn-phone"><i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i></button>
-                        </p>
                     </form>
                 </div>
                 
                     <div class="filter-phone"><h3>Filtres</h3></div> 
                     <div class="filter-box">
                         <h3 id="desktop-title">Filtres</h3>
-                    <button class="filter-btn">
+                    <button class="filter-btn" onclick="filterSelection('economic')">
                         <i class="fa-solid fa-money-bill-wave" id="filter-btn-icon"></i> Économique
                     </button>
-                        <button class="filter-btn">
+                        <button class="filter-btn" onclick="filterSelection('family-friendly')">
                         <i class="fa-solid fa-person"  id="filter-btn-icon"></i> Familial
                         </button>
-                        <button class="filter-btn">
+                        <button class="filter-btn" onclick="filterSelection('romantic')">
                         <i class="fa-solid fa-heart" id="filter-btn-icon"></i> Romantique
                         </button>
-                        <button class="filter-btn">
+                        <button class="filter-btn" onclick="filterSelection('ourSelection')">
                         <i class="fa-solid fa-fire" id="filter-btn-icon"></i> Nos pépites
                         </button>
                 </div>
@@ -72,7 +72,7 @@
             </section>            
 
             <!-- box for both sections : hebergement à marseille and the popular/sponsored section -->
-            <div class="hebergements-and-populaires__box">
+            <div class="hebergements-and-sponsored__container">
 
                 <section class="hebergement-section-class" id="hebergements">
                     <h1>Hébergements à Marseille</h1>
@@ -288,19 +288,19 @@
             <div class="footer-container">
                 <div class="a-propos">
                     <h3>A propos</h3>
-                    <span class="footer-content">Fonctionnement du site</span>
-                    <span class="footer-content">Conditions générales</span>
-                    <span class="footer-content">Données et confidentialité</span>
+                    <a target="_blank" href="#" class="footer-content">Fonctionnement du site</a>
+                    <a target="_blank" href="#" class="footer-content">Conditions générales</a>
+                    <a target="_blank" href="#" class="footer-content">Données et confidentialité</a>
                 </div>
                 <div class="a-propos">
                     <h3>Nos hébérgements</h3>
-                    <span class="footer-content">Chartes qualiité</span>
-                    <span class="footer-content">Proposez votre hôtel</span>
+                    <a target="_blank" href="#" class="footer-content">Chartes qualiité</a>
+                    <a target="_blank" href="#" class="footer-content">Proposez votre hôtel</a>
                 </div>
                 <div class="a-propos">
                     <h3>Assistance</h3>
-                    <span class="footer-content">Centre d'aide</span>
-                    <span class="footer-content">Nous contacter</span>
+                    <a target="_blank" href="#" class="footer-content">Centre d'aide</a>
+                    <a target="_blank" href="#" class="footer-content">ous contacter</a>
                 </div>
             </div>
         </footer>

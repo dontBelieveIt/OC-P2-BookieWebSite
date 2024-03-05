@@ -9,8 +9,7 @@ MEDIA QUERIES
 MEDIUM DEVICES 
  ***********************************************************/
  @media (max-width: 1024px) {
-
-    h1 {
+    /* h1 {
         line-height: 1.3;
     }
     h2 {
@@ -24,7 +23,7 @@ MEDIUM DEVICES
     h4 {
         font-size: 16px; 
         font-weight: 400;
-    }
+    } */
     /***********************************************************
     MAIN CONTAINER 
     ***********************************************************/
@@ -82,7 +81,7 @@ MEDIUM DEVICES
     /***********************************************************
     INFO GROUP : RESEARCH BAR, FILTERS, INFO   
     ***********************************************************/
-    .box__section-info {
+    .section-container__info {
         margin : auto;
         margin-bottom: 30px;
     }
@@ -113,7 +112,7 @@ MEDIUM DEVICES
     Hebergements And Populaires Box Div
     ***********************************************************/
     /* Div for both the section : hebergement à Marseille and the Popular/Sponsored section */
-    .hebergements-and-populaires__box {
+    .hebergements-and-sponsored__container {
         flex-direction: column;
         width: 100%;
         margin: 0;
@@ -121,7 +120,7 @@ MEDIUM DEVICES
         position: relative;
     }
     
-    .hebergements-and-populaires__box section {
+    .hebergements-and-sponsored__container section {
         background-color: var(--main-bg-color);
         border-radius: 20px;
         padding: 30px;
@@ -167,6 +166,8 @@ MEDIUM DEVICES
         max-width: 1024px;
         width: 100%;
         padding: 30px;
+        display: flex; 
+        flex-wrap: wrap;
     }
     .activite-container{
         display: grid; 
