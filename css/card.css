@@ -10,6 +10,9 @@ COMMON CONTENT FOR CARD
  .cards-container {
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: unset;
+    gap: 30px;
  }
 
  /* following refactoring : card common points */
@@ -26,6 +29,17 @@ COMMON CONTENT FOR CARD
 
  .card-img {
     object-fit: cover;
+    outline: 4px solid #FFF;
+    outline-offset: -4px;
+ }
+ /* Nuit à partir de*/ 
+ .card-price {
+   font-size:14px; 
+   font-weight: 400; 
+   line-height:1.6;    
+ }
+ .card-price::after {
+    content: "Nuit à partir de ";
  }
  /* euro symbol for the span euro */
 .euro::after {
@@ -61,15 +75,6 @@ SECTION /HEBERGEMENT A MARSEILLE
 .hebergement-section-class {
     width: 65%;
 }
-#hebergements-plus {
-    padding-top: 20px;
-}
- /* box pour la section hébergement à Marseille, without the "Afficher plus" and title of the section */
- .hebergement-section-box{
-    justify-content: space-between;
-    align-items: unset;
-    gap: 40px 0px;
- }
 
  /* cards */
  /* style pour l'article (box) hebergement card */
@@ -81,8 +86,6 @@ SECTION /HEBERGEMENT A MARSEILLE
 .hebergement-img {
     width: inherit; 
     height: 60%;
-    outline: 4px solid #FFF;
-    outline-offset: -4px;
     border-radius: 20px 20px 0 0;
 }
 .hebergement-card__description {
@@ -94,6 +97,10 @@ SECTION /HEBERGEMENT A MARSEILLE
 .hebergement-card__description h3 {
     margin: 0;
 }
+/* afficher plus, id spéciale */
+#hebergements-plus {
+    padding-top: 20px;
+}
 
 /***********************************************************
 SECTION /SPONSORED/POPULAIRES 
@@ -102,11 +109,7 @@ SECTION /SPONSORED/POPULAIRES
  .sponsored-section-class {
     width: 32%;
 }
-/* box(parents) for the card(elements) without the title elements */
-.sponsored-cards-box {
-    margin-top: 33px;
-    gap: 30px;
-}
+
 .sponsored-title {
     display: flex;
     justify-content: space-between;
@@ -114,41 +117,30 @@ SECTION /SPONSORED/POPULAIRES
 }
 
 /* cards */
- .sponsored-cards {
-    background-color: white;
-    padding: 5px;
+.sponsored-cards {
     display: flex; 
     flex-direction: row;
     width: 369px;
+    height: 136px;
 }
 
 .sponsored-cards-img {
-    height: 136px;
-    width: 123px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    height: inherit;
+    width: 33.33%;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .sponsored-card-content {
-    /* width: 67%; */
-    padding-left: 15px;
+    width: 67%;
+    padding: 10px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
-.sponsored-card-title h3 {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.sponsored-card-subtitle h3 {
+.sponsored-card-content h3 {
     margin: 0;
-}
-
-.sponsored-card-rating {
-    margin-bottom: 5px;
 }
 
 /***********************************************************
