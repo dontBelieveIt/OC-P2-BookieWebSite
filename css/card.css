@@ -159,7 +159,7 @@ ACTIVITE A MARSEILLE
     display: flex; 
     width: 100%;
     max-width: 1440px;
-    min-width: 1024px;
+    min-width: 320px;
     box-sizing: border-box;
     flex-direction: row;
     justify-content: space-evenly;
