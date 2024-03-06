@@ -7,15 +7,18 @@ MEDIA QUERIES
  /***********************************************************
 MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format media queries. 
  ***********************************************************/
-/***********************************************************
-SMALL DEVICES (PHONES, LESS THAN 768px)
- ***********************************************************/
-@media (max-width: 767.98px) {
-    /***** MAIN CONTAINER (header, main, footer) */
+ 
+@media only screen and (max-width: 767.98px) {
+    /***********************************************************
+    MAIN CONTAINER 
+    ***********************************************************/
     .main-container:not(header) {
-        padding: 0px 15px;
+        padding: 0px; 
+        margin: 0; 
     }
-    /***** HEADER, NAV, FOOTER */
+    /***********************************************************
+    HEADER, NAV, FOOTER
+    ***********************************************************/
     header {
         width: 100%;
         align-items: center;
@@ -23,12 +26,11 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     }
     nav {
         width:100%;
-        position: relative;
-        left: -15px;
     }
     /******STYLE FOR HEADER ***********/
     .header__logo {
         margin: auto;
+        padding: 30px;
     }
     .navBar {
         height: 36px;
@@ -71,7 +73,7 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
         display: inline-flex;
         flex-direction: row;
         box-sizing: border-box;
-        width: 335px;
+        min-width: 320px;
         justify-content: flex-start;
         align-items: center;
     }
@@ -107,6 +109,7 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     .filter-box {
         display: inline-flex;
         height: auto;
+        width: 100%;
         box-sizing: border-box;
         flex-wrap: wrap;
     }
@@ -120,7 +123,7 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     .filter-btn {
         padding: 4px 10px 4px 10px;
         font-size: 14px;
-        width: 45%;
+        width: 48%;
         margin-bottom: 15px;
     }
     /***********************************************************
@@ -129,19 +132,15 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     /* Div for both the section : hebergement à Marseille and the Popular/Sponsored section */
     .hebergements-and-sponsored__container {
         display: flex;
+        width: 100%;
         flex-direction: column;
-        width: auto;
-        left: -15px;
-        right: -15px;
-        border-radius: 0px;
-        position: relative;
+        width: unset;
     }
 
     .hebergements-and-sponsored__container section {
-        display: flex;
-        flex-direction: column;
-        width: auto;
         border-radius: 0px;
+        width: 100%;
+        background-color: transparent;
     }
     /***********************************************************
     SECTION /HEBERGEMENT A MARSEILLE
@@ -150,7 +149,10 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     /* It's the section class, the container of the hebergement section */
     .hebergement-section-container {
         width: 100%;
-        order: 2;
+    }
+    .hebergement-section-class {
+        background-color: transparent;
+        order:2;
     }
 
     /* cards */
@@ -210,7 +212,6 @@ SMALL DEVICES (PHONES, LESS THAN 768px)
     .activite-card__description {
         padding: 2px 16px;   
         line-height: 1.8;
-
     }
     /***********************************************************
     FOOTER 
