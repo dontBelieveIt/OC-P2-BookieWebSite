@@ -156,21 +156,24 @@ ACTIVITE A MARSEILLE
 
 .activite-container {
     display: flex; 
-    width: clamp(320px, 100%, 1440px);
-    box-sizing: border-box;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: nowrap;
     gap: 30px;
 }
+.activite-container>a {
+    flex-grow: 1; 
+    aspect-ratio: 3 / 4;
+    width: 20%;
+}
+
 /* individual card for the activité à Marseille section */
 .activite-card {
-    width: clamp( 100px, 100%, 297.5px);
-    height: 439px;
     flex-direction: column;
+    overflow: hidden;
 }
 .activite-img {
-    height: 380px;
+    aspect-ratio: 3 / 4 ;
     border-radius: 20px 20px 0 0;
     outline: unset;
     outline-offset: unset;
@@ -178,5 +181,6 @@ ACTIVITE A MARSEILLE
 .activite-card__description {
     padding: 0px 10px 0px 20px;
     display: flex; 
+    height: 75px;
     align-items: center ;
 }
