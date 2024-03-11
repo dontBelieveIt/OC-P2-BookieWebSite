@@ -25,6 +25,10 @@ MEDIA QUERIES: see the css file "css/media768px.css" (phones) and "media1024px.c
     --filter-bg-color: #DEEBFF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -66,12 +70,9 @@ h4 {
  MAIN CONTAINER
  ***********************************************************/
  .main-container:not(header) {
-    width: 100%;
-    max-width: 1440px;
-    min-width: 320px;
+    width: clamp(320px, 100%, 1440px);
     padding: 0 50px;
     box-sizing: border-box;
-    justify-content: center;
 }
 
 /***********************************************************
@@ -79,10 +80,8 @@ h4 {
  ***********************************************************/
  header {
     height: auto;
-    width:100%;
+    width: clamp(320px, 100%, 1440px);
     box-sizing: border-box;
-    max-width: 1440px;
-    min-width: 320px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

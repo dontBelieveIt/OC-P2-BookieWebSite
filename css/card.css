@@ -8,7 +8,7 @@ COMMON CONTENT FOR CARD
 ***********************************************************/
 /* following refactoring, container for section */
 .cards-container {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: unset;
@@ -151,15 +151,12 @@ ACTIVITE A MARSEILLE
     margin-top: 50px;
 }
 .activite-marseille-section {
-    min-width: 280px;
-    max-width: 1440px;
+    width: clamp(280px, 100%, 1440px);
 }
 
 .activite-container {
     display: flex; 
-    width: 100%;
-    max-width: 1440px;
-    min-width: 320px;
+    width: clamp(320px, 100%, 1440px);
     box-sizing: border-box;
     flex-direction: row;
     justify-content: space-evenly;
@@ -168,7 +165,7 @@ ACTIVITE A MARSEILLE
 }
 /* individual card for the activité à Marseille section */
 .activite-card {
-    width: 297.5px;
+    width: clamp( 100px, 100%, 297.5px);
     height: 439px;
     flex-direction: column;
 }

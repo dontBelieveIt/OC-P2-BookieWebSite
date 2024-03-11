@@ -15,6 +15,7 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
     .main-container:not(header) {
         padding: 0px; 
         margin: 0; 
+        scroll-snap-type: mandatory;
     }
     /***********************************************************
     HEADER, NAV, FOOTER
