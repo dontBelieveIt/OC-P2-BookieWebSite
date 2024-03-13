@@ -14,7 +14,9 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
     ***********************************************************/
     .main-container:not(header) {
         padding: 0px; 
-        margin: 0; 
+        margin: auto; 
+        scroll-snap-type: y;
+        scroll-snap-align: center;
     }
     /***********************************************************
     HEADER, NAV, FOOTER
@@ -164,9 +166,9 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
 
     /* cards */
     /* style pour l'article (box) hebergement card */
-    .hebergement-card {
+    /* a>.hebergement-card {
         width: 320px;
-    }
+    } */
     .hebergement-img {
         width: 100%;
     }
@@ -184,21 +186,24 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
 
     /* cards */
     .sponsored-cards {
-        /* width: 100%; */
-        width: 320px;
+       min-width: 320px;
     }
 
     .sponsored-cards-img {
-        height: 136px;
-        width: 123px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        height: inherit;
+        border-bottom-left-radius: 20px;
+        width: calc(+85%);
     }
     /***********************************************************
     ACTIVITE A MARSEILLE
     ***********************************************************/
     .activite-marseille-section {
         width: 100%;
+    }
+    .activite-marseille-section>h1 {
+        padding-left: 30px;
     }
     .activite-container{
         display: flex; 
@@ -208,10 +213,9 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
         padding: 0px 10px;  
     }
     /* individual card for the activité à Marseille section */
-    .activite-card {
-        width: 320px;
-        height: 200px; 
-        outline: none;
+    .activite-container>a {
+        width:100%;
+        aspect-ratio: unset;
     }
     .activite-img {
         width: inherit; 
@@ -234,7 +238,4 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
         flex-direction: column;
         margin-bottom: 70px;
       }
-      .a-propos {
-      }
-
 }

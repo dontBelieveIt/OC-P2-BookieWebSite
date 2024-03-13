@@ -8,11 +8,14 @@ COMMON CONTENT FOR CARD
 ***********************************************************/
 /* following refactoring, container for section */
 .cards-container {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: unset;
+    justify-content: center;
+    align-items: baseline;
     gap: 30px;
+}
+.cards-container>a {
+    flex-grow: 1;
 }
 
 /* following refactoring : card common points */
@@ -36,9 +39,9 @@ COMMON CONTENT FOR CARD
 }
 /* Nuit à partir de*/ 
 .card-price {
-    font-size:14px; 
+    font-size: 14px; 
     font-weight: 400; 
-    line-height:1.6;    
+    line-height: 1.6;    
 }
 .card-price::after {
     content: "Nuit à partir de ";
@@ -80,15 +83,15 @@ SECTION /HEBERGEMENT A MARSEILLE
 
 /* cards */
 /* style pour l'article (box) hebergement card */
-.hebergement-card {
-    transition: 0.3s;
-    width: 250px;
-    height: 207px; 
-    display: block;
+a>.hebergement-card {
+    height: 207.25px;
+    display: flex;
+    flex: 1;    
+    flex-direction: column;
 }
-.hebergement-img {
+.hebergement-img {  
+    aspect-ratio: 2 / 1;
     height: 60%;
-    width: inherit;
     border-radius: 20px 20px 0 0;
 }
 .hebergement-card__description {
@@ -122,12 +125,12 @@ SECTION /SPONSORED/POPULAIRES
 /* cards */
 .sponsored-cards {
     flex-direction: row;
-    width: 369px;
-    height: 136px;
+    height: 146px;
 }
 
 .sponsored-cards-img {
-    width: 33.33%;
+    aspect-ratio: 6 / 7;
+    height: inherit;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -151,29 +154,30 @@ ACTIVITE A MARSEILLE
     margin-top: 50px;
 }
 .activite-marseille-section {
-    min-width: 280px;
-    max-width: 1440px;
+    width: clamp(280px, 100%, 1440px);
 }
 
 .activite-container {
     display: flex; 
-    width: 100%;
-    max-width: 1440px;
-    min-width: 320px;
-    box-sizing: border-box;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: nowrap;
     gap: 30px;
 }
+
 /* individual card for the activité à Marseille section */
+.activite-container>a {
+    flex-grow: 1; 
+    aspect-ratio: 3 / 4;
+    width: 20%;
+}
+
 .activite-card {
-    width: 297.5px;
-    height: 439px;
     flex-direction: column;
+    overflow: hidden;
 }
 .activite-img {
-    height: 380px;
+    aspect-ratio: 3 / 4 ;
     border-radius: 20px 20px 0 0;
     outline: unset;
     outline-offset: unset;
@@ -181,5 +185,6 @@ ACTIVITE A MARSEILLE
 .activite-card__description {
     padding: 0px 10px 0px 20px;
     display: flex; 
+    height: 75px;
     align-items: center ;
 }

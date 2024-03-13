@@ -25,6 +25,10 @@ MEDIA QUERIES: see the css file "css/media768px.css" (phones) and "media1024px.c
     --filter-bg-color: #DEEBFF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -47,6 +51,9 @@ a:active {
     color: var(--main-color);
 }
 
+.sr-only {
+    font-size: clamp(10px, 12px, 14px)
+}
 /****** H1, H2, H3, H4 ***********/
 h1 {
     font-size: 22px;
@@ -66,12 +73,9 @@ h4 {
  MAIN CONTAINER
  ***********************************************************/
  .main-container:not(header) {
-    width: 100%;
-    max-width: 1440px;
-    min-width: 320px;
+    width: clamp(320px, 100%, 1440px);
     padding: 0 50px;
     box-sizing: border-box;
-    justify-content: center;
 }
 
 /***********************************************************
@@ -79,10 +83,8 @@ h4 {
  ***********************************************************/
  header {
     height: auto;
-    width:100%;
+    width: clamp(320px, 100%, 1440px);
     box-sizing: border-box;
-    max-width: 1440px;
-    min-width: 320px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -293,4 +295,9 @@ input:focus::placeholder {
  /***********************************************************
 MEDIA QUERIES
  ***********************************************************/
-/* See the css file "media.css" in the /css repository for the media queries/responsive section.  */
+ @media screen and (min-width:1440px) {
+    body {
+     align-items: center;
+    }
+}
+ /* See the css file "media.css" in the /css repository for the media queries/responsive section.  */

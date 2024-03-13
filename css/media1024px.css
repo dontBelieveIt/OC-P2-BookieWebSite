@@ -57,6 +57,7 @@ MEDIUM DEVICES
     ***********************************************************/
     /* Div for both the section : hebergement à Marseille and the Popular/Sponsored section */
     .hebergements-and-sponsored__container {
+        display: flex;
         flex-direction: column;
         width: 100%;
         margin: 0;
@@ -86,9 +87,9 @@ MEDIUM DEVICES
         align-items: unset;
         gap: 20px 0px;
     }
-    .hebergement-card {
-        width: 250px;
-    }
+    /* a>.hebergement-card {
+
+    } */
     .hebergement-img {
         width: 100%;
     }
@@ -106,8 +107,7 @@ MEDIUM DEVICES
 
     /* cards */
     .sponsored-cards {
-        width: 250px;
-        height: 140px;
+        width: 274.67px;
     }
     /***********************************************************
     ACTIVITE A MARSEILLE
@@ -124,11 +124,6 @@ MEDIUM DEVICES
         justify-content: flex-start ;
     }
      /* individual card for the activité à Marseille section */
-    .activite-card {
-        width: 193px;
-        height: 270px;
-        flex-direction: column; 
-    }
     .activite-img {
         width: inherit; 
         height: 200px;
