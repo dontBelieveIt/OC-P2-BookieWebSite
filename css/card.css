@@ -10,9 +10,12 @@ COMMON CONTENT FOR CARD
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: unset;
+    justify-content: center;
+    align-items: baseline;
     gap: 30px;
+}
+.cards-container>a {
+    flex-grow: 1;
 }
 
 /* following refactoring : card common points */
@@ -36,9 +39,9 @@ COMMON CONTENT FOR CARD
 }
 /* Nuit à partir de*/ 
 .card-price {
-    font-size:14px; 
+    font-size: 14px; 
     font-weight: 400; 
-    line-height:1.6;    
+    line-height: 1.6;    
 }
 .card-price::after {
     content: "Nuit à partir de ";
@@ -80,15 +83,15 @@ SECTION /HEBERGEMENT A MARSEILLE
 
 /* cards */
 /* style pour l'article (box) hebergement card */
-.hebergement-card {
-    transition: 0.3s;
-    width: 250px;
-    height: 207px; 
-    display: block;
+a>.hebergement-card {
+    height: 207.25px;
+    display: flex;
+    flex: 1;    
+    flex-direction: column;
 }
-.hebergement-img {
+.hebergement-img {  
+    aspect-ratio: 2 / 1;
     height: 60%;
-    width: inherit;
     border-radius: 20px 20px 0 0;
 }
 .hebergement-card__description {
@@ -122,12 +125,12 @@ SECTION /SPONSORED/POPULAIRES
 /* cards */
 .sponsored-cards {
     flex-direction: row;
-    width: clamp(30%, 90%, 369px);
-    height: 136px;
+    height: 146px;
 }
 
 .sponsored-cards-img {
-    width: 33.33%;
+    aspect-ratio: 6 / 7;
+    height: inherit;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -161,13 +164,14 @@ ACTIVITE A MARSEILLE
     flex-wrap: nowrap;
     gap: 30px;
 }
+
+/* individual card for the activité à Marseille section */
 .activite-container>a {
     flex-grow: 1; 
     aspect-ratio: 3 / 4;
     width: 20%;
 }
 
-/* individual card for the activité à Marseille section */
 .activite-card {
     flex-direction: column;
     overflow: hidden;

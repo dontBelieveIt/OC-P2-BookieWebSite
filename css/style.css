@@ -51,6 +51,9 @@ a:active {
     color: var(--main-color);
 }
 
+.sr-only {
+    font-size: clamp(10px, 12px, 14px)
+}
 /****** H1, H2, H3, H4 ***********/
 h1 {
     font-size: 22px;
@@ -292,4 +295,9 @@ input:focus::placeholder {
  /***********************************************************
 MEDIA QUERIES
  ***********************************************************/
-/* See the css file "media.css" in the /css repository for the media queries/responsive section.  */
+ @media screen and (min-width:1440px) {
+    body {
+     align-items: center;
+    }
+}
+ /* See the css file "media.css" in the /css repository for the media queries/responsive section.  */
