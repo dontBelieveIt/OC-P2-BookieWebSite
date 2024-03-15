@@ -108,6 +108,9 @@ footer {
 .header__logo {
     padding: 30px 50px 30px 0px;
 }
+.header__logo>img {
+    height: 19px;
+}
 .navBar {
     display: flex;
     justify-content : space-evenly;
