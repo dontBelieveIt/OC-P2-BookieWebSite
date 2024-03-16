@@ -7,16 +7,30 @@ ACTIVITES A MARSEILLE : card + container for the section "Activité à Marseille
 COMMON CONTENT FOR CARD
 ***********************************************************/
 /* following refactoring, container for section */
-.cards-container {
+.cards-container-hebergement {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
     gap: 30px;
 }
-.cards-container>a {
+
+.cards-container-hebergement>a {
+    flex-grow: 1;
+    width: 30%; 
+}
+
+.cards-container-sponsored {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 30px;
+}
+.cards-container-sponsored>a {
     flex-grow: 1;
 }
+
 
 /* following refactoring : card common points */
 .card {
