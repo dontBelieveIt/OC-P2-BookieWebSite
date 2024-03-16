@@ -49,7 +49,10 @@ MEDIUM DEVICES
     /***********************************************************
     Common content for card
     ***********************************************************/
-    .cards-container {
+    .cards-container-hebergement {
+        justify-content: space-evenly;
+    }
+    .cards-container-sponsored {
         justify-content: space-evenly;
     }
     /***********************************************************

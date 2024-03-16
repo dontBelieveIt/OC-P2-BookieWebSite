@@ -6,32 +6,6 @@ ACTIVITES A MARSEILLE : card + container for the section "Activité à Marseille
 /***********************************************************
 COMMON CONTENT FOR CARD
 ***********************************************************/
-/* following refactoring, container for section */
-.cards-container-hebergement {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    gap: 30px;
-}
-
-.cards-container-hebergement>a {
-    flex-grow: 1;
-    width: 30%; 
-}
-
-.cards-container-sponsored {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    gap: 30px;
-}
-.cards-container-sponsored>a {
-    flex-grow: 1;
-}
-
-
 /* following refactoring : card common points */
 .card {
     border-radius: 20px;
@@ -53,19 +27,21 @@ COMMON CONTENT FOR CARD
 }
 /* Nuit à partir de*/ 
 .card-price {
-    font-size: 14px; 
-    font-weight: 400; 
-    line-height: 1.6;    
+    font-size: 0.875rem; 
+    display: inline-block; 
+    line-height: 1.5;
 }
-.card-price::after {
+.span-price::before {
     content: "Nuit à partir de ";
 }
 /* euro symbol for the span euro */
-.euro::after {
-    content: "€";
+.euro::before {
+    content: " €";
     font-weight: 700;
 }
 /* stars note, default definied in the .fa-solid of the ./css/style.css file, as the main-color */
+.card-rating {
+}
 .neutral-star {
     color: var(--main-bg-color);
 }
@@ -89,16 +65,29 @@ Hebergements And Populaires Box Div
 /***********************************************************
 SECTION /HEBERGEMENT A MARSEILLE
 ***********************************************************/
+.cards-container-hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 30px;
+    width: 100%;
+}
+
+.cards-container-hebergement>a {
+    flex-grow: 1;
+    width: 29%; 
+}
+
 /****** section > container/box > elements ***********/
 /* It's the section class, the container of the hebergement section */
 .hebergement-section-class {
     width: 65%;
 }
 
-/* cards */
 /* style pour l'article (box) hebergement card */
 a>.hebergement-card {
-    height: 207.25px;
+    height: 13rem;
     display: flex;
     flex: 1;    
     flex-direction: column;
@@ -109,13 +98,20 @@ a>.hebergement-card {
     border-radius: 20px 20px 0 0;
 }
 .hebergement-card__description {
-    height: 40%;
-    padding: 2px 16px;   
-    line-height: 1.5;
+    flex-basis: 40%;
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+    height: 5.25rem;
+    justify-content: space-between;
 }
 
-.hebergement-card__description h3 {
+.hebergement-card-name {
     margin: 0;
+    font-size: 1rem;
+}
+.hebergement-rating {
+    padding-bottom: 10px;
 }
 /* afficher plus, id spéciale */
 #hebergements-plus {
@@ -125,6 +121,18 @@ a>.hebergement-card {
 /***********************************************************
 SECTION /SPONSORED/POPULAIRES 
 ***********************************************************/
+
+.cards-container-sponsored {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 30px;
+}
+.cards-container-sponsored>a {
+    flex-grow: 1;
+}
+
 /* box for the sponsored section */
 .sponsored-section-class {
     width: 32%;

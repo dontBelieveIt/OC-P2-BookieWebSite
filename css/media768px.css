@@ -99,7 +99,8 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
         border-radius: 15px;
         box-shadow: 0px 4px 4px 0px #00000040;
         cursor: pointer;
-        /* text-align: center; */
+        left: -37px;
+        position: relative;
     }   
     #magnifying-glass {
         color: white;
@@ -131,7 +132,11 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
     /***********************************************************
     CARD CONTAINER
     ***********************************************************/
-    .cards-container {
+    .cards-container-hebergement {
+        justify-content: center;
+        gap: 30px;
+    }
+    .cards-container-sponsored {
         justify-content: center;
         gap: 30px;
     }
@@ -163,12 +168,11 @@ MEDIUM DEVICES  : see the file "~/css/media1024px.css" for the tablet format med
         background-color: transparent;
         order:2;
     }
-
     /* cards */
     /* style pour l'article (box) hebergement card */
-    /* a>.hebergement-card {
-        width: 320px;
-    } */
+    .cards-container-hebergement>a {
+        width: 100%;
+    }
     .hebergement-img {
         width: 100%;
     }
