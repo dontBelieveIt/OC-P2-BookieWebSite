@@ -147,7 +147,7 @@ SECTION /SPONSORED/POPULAIRES
 /* cards */
 .sponsored-cards {
     flex-direction: row;
-    height: 146px;
+    height: 9rem;
 }
 
 .sponsored-cards-img {

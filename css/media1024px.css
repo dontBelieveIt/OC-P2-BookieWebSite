@@ -53,7 +53,11 @@ MEDIUM DEVICES
         justify-content: space-evenly;
     }
     .cards-container-sponsored {
-        justify-content: space-evenly;
+        justify-content: stretch;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
     }
     /***********************************************************
     Hebergements And Populaires Box Div
@@ -88,7 +92,7 @@ MEDIUM DEVICES
         justify-content: space-evenly;
         flex-direction: row;
         align-items: unset;
-        gap: 20px 0px;
+        gap: 1.25rem 0rem;
     }
     /* a>.hebergement-card {
 
@@ -105,12 +109,18 @@ MEDIUM DEVICES
         padding: 30px 20px 50px 20px;
     }
     .sponsored-cards-box {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
-    /* cards */
-    .sponsored-cards {
-        width: 274.67px;
+    .cards-container-sponsored>a {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .sponsored-cards-img {
+        width: 30%; 
+        height: inherit;
+        aspect-ratio: unset;
     }
     /***********************************************************
     ACTIVITE A MARSEILLE
@@ -129,7 +139,7 @@ MEDIUM DEVICES
      /* individual card for the activité à Marseille section */
     .activite-img {
         width: inherit; 
-        height: 200px;
+        height: 12.5rem;
     }
     .activite-card__description {
         padding: 0px 10px 0px 10px;
