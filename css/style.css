@@ -241,7 +241,22 @@ input:focus::placeholder {
     background-color: #DEEBFF;
     transition: 0.8s;
 }
-#filter-btn-icon {
+#filter-btn-icon1 {
+    color: #0065FC;
+    font-size: 22px;
+    margin-right: 10px;
+}
+#filter-btn-icon2 {
+    color: #0065FC;
+    font-size: 22px;
+    margin-right: 10px;
+}
+#filter-btn-icon3 {
+    color: #0065FC;
+    font-size: 22px;
+    margin-right: 10px;
+}
+#filter-btn-icon4 {
     color: #0065FC;
     font-size: 22px;
     margin-right: 10px;

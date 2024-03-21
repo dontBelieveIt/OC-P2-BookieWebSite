@@ -8,7 +8,7 @@ MEDIA QUERIES
  /***********************************************************
 MEDIUM DEVICES 
  ***********************************************************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     /***********************************************************
     MAIN CONTAINER 
     ***********************************************************/
@@ -42,7 +42,7 @@ MEDIUM DEVICES
     /******INFO LINE***********/
     .filter-phone {
         display: inline;
-        margin-bottom: -30px;
+        margin-bottom: -10px;
         gap: 0;
         font-weight: 700;
     }

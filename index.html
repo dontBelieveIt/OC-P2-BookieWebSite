@@ -24,12 +24,9 @@
             <div class="header__logo">
                 <img src="./images/logo/Booki.png" alt="Logo Booki">
             </div>
-            <nav>
-                <div class="navBar">
-                        <button class="navBar__btn"><a href="#hebergements"><h4>Hébergements</h4></a></button>
-                        <button class="navBar__btn"><a href="#activite"><h4>Activités</h4></a></button>
-                </div>
-               
+            <nav class="navBar">
+                        <a href="#hebergements" class="navBar__btn"><h4>Hébergements</h4></a>
+                        <a href="#activite" class="navBar__btn"><h4>Activités</h4></a>
             </nav>
         </header>
 
@@ -41,28 +38,28 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div class="info__searchBar">
-                    <form method="get" action="">
+                    <form method="get">
                         <div class="info__searchBar-mapIcon--div">  
-                            <label for="recherche" id="recherche-label"><i class="fa-solid fa-location-dot" id="mapIcon"></i></label>
+                            <label><i class="fa-solid fa-location-dot" id="mapIcon"></i></label>
                         </div>
                         <input type="text" name="recherche" id="searchBar__text" placeholder="Marseille, France" size="30" maxlength="20">
                         <input type="submit" id="searchBar__submit-btn" value="Rechercher"><button id="searchBar__submit-btn-phone"><i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i></button>
                     </form>
                 </div>
-                    <span class="filter-phone"><h3>Filtres</h3></span> 
+                    <h3 class="filter-phone">Filtres</h3> 
                     <div class="filter-box">
                         <h3 id="desktop-title">Filtres</h3>
                     <button class="filter-btn" onclick="filterSelection('economic')">
-                        <i class="fa-solid fa-money-bill-wave" id="filter-btn-icon"></i> Économique
+                        <i class="fa-solid fa-money-bill-wave" id="filter-btn-icon1"></i> Économique
                     </button>
                         <button class="filter-btn" onclick="filterSelection('family-friendly')">
-                        <i class="fa-solid fa-person"  id="filter-btn-icon"></i> Familial
+                        <i class="fa-solid fa-person"  id="filter-btn-icon2"></i> Familial
                         </button>
                         <button class="filter-btn" onclick="filterSelection('romantic')">
-                        <i class="fa-solid fa-heart" id="filter-btn-icon"></i> Romantique
+                        <i class="fa-solid fa-heart" id="filter-btn-icon3"></i> Romantique
                         </button>
                         <button class="filter-btn" onclick="filterSelection('ourSelection')">
-                        <i class="fa-solid fa-fire" id="filter-btn-icon"></i> Nos pépites
+                        <i class="fa-solid fa-fire" id="filter-btn-icon4"></i> Nos pépites
                         </button>
                 </div>
                 <div class="info-box">
