@@ -1,4 +1,7 @@
-/* CARD : divided by section
+/* CONTENT INFORMATION
+/!\Element classed from top to bottom
+/* CARD : divided by section + CARDS Containers
+
 HEBERGEMENT A MARSEILLE : card + container for the section "Hébergements à Marseille" 
 HEBERGEMENT POPULAR (sponsored): It's the section class, the container of the hebergement section 
 ACTIVITES A MARSEILLE : card + container for the section "Activité à Marseille"  */
@@ -40,8 +43,6 @@ COMMON CONTENT FOR CARD
     font-weight: 700;
 }
 /* stars note, default definied in the .fa-solid of the ./css/style.css file, as the main-color */
-/* .card-rating {
-} */
 .neutral-star {
     color: var(--main-bg-color);
 }

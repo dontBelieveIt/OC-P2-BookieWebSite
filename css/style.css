@@ -2,13 +2,13 @@
 
 /!\Element classed from top to bottom
 
-GENERAL : root, body, a, h1... 
-MAINT CONTAINER / For Header, Main (sections) and Footer part 
-HEADER, NAV, FOOTER
+GENERAL : root, body, a, h1...
+MAINT CONTAINER / For Header, Main (sections) and Footer part
+HEADER, NAV
 **style for header
-INFO GROUP: research bar, filters, info... 
-CARD : see the css file "css/card.css" for the card section
-FOOTER 
+INFO GROUP: research bar, filters, info...
+CARDS AND CARDS SECTION : see the css file "css/card.css" for the card section
+FOOTER
 MEDIA QUERIES: see the css file "css/media768px.css" (phones) and "media1024px.css" (tablets) for the responsive stylesheet
 ***********************************************************************************************************************************/
 
@@ -19,7 +19,7 @@ MEDIA QUERIES: see the css file "css/media768px.css" (phones) and "media1024px.c
 
 :root {
     --main-color: #0065FC;
-    --light-blue: #DEEBFF; 
+    --light-blue: #DEEBFF;
     --light-brown: #D9d9d9;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
@@ -40,11 +40,11 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: var(--main-color); 
+    color: var(--main-color);
     transition: .8s;
 }
 a:active {
-    color: var(--main-color);   
+    color: var(--main-color);
 }
 
 .fa-solid {
@@ -65,7 +65,7 @@ h3 {
     font-size: 16px;
 }
 h4 {
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -79,9 +79,9 @@ h4 {
 }
 
 /***********************************************************
- HEADER, NAV, FOOTER
+ HEADER, NAV
  ***********************************************************/
- header {
+header {
     height: auto;
     width: clamp(320px, 100%, 1440px);
     box-sizing: border-box;
@@ -89,21 +89,12 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
 }
-
 nav {
-    min-width: 320px;  
+    min-width: 320px;
     width:25%;
     padding: 0;
     box-sizing: border-box;
 }
-footer {
-    height: auto;
-    box-sizing: border-box;
-    max-width: 1440px;
-    background-color: #f2f2f2;
-    margin: auto;
-}
-
 /******STYLE FOR HEADER ***********/
 .header__logo {
     padding: 30px 50px 30px 0px;
@@ -124,17 +115,17 @@ footer {
 }
 .navBar__btn:hover {
     color: var(--main-color);
-    border-top: 3px solid var(--main-color); 
+    border-top: 3px solid var(--main-color);
     transition: .1s;
 }
 .navBar__btn:active {
-    color: var(--main-color); 
-    border-top: 3px solid var(--main-color); 
+    color: var(--main-color);
+    border-top: 3px solid var(--main-color);
 }
 
 /***********************************************************
- INFO GROUP : RESEARCH BAR, FILTERS, INFO   
- ***********************************************************/
+ INFO GROUP : RESEARCH BAR, FILTERS, INFO
+***********************************************************/
  .section-container__info {
     display: flex;
     flex-direction: column;
@@ -154,12 +145,15 @@ footer {
     align-items: center;
 }
 /* éléments de la barre de recherche de la section info, de droite à gauche */
+.searchBar_form {
+    width:100%;
+}
 .info__searchBar-mapIcon--div {
     display: inline-flex;
     background-color: #F2F2F2;
-    width: 50px; 
+    width: 50px;
     height: 54px;
-    position: relative; 
+    position: relative;
     top: 3.5px;
     align-items: center;
     justify-content: center;
@@ -170,16 +164,17 @@ footer {
     font-size: 22px;
 }
 
+/* Element textuel de la barre de recherche */
 input#searchBar__text {
     display: inline;
     height: 50px;
     border-right: none;
     border-left: none;
-    border-top: 1px solid #F2F2F2; 
+    border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     position: relative;
     margin: 0;
-    left: -4px; 
+    left: -4px;
     right: 0;
     color: black;
     font-weight: bold;
@@ -192,6 +187,7 @@ input:focus::placeholder {
     opacity: 0.1;
 }
 
+/* Boutons de la barre de recherche */
 #searchBar__submit-btn {
     display: inline;
     background-color: #0065FC;
@@ -199,13 +195,13 @@ input:focus::placeholder {
     font-weight: bold;
     border: none;
     border-radius: 0px 15px 15px 0px;
-    height: 54px; 
+    height: 54px;
     position: relative;
     margin: 0;
     left: -8px;
     bottom: 0px;
     cursor: pointer;
-    text-align: center; 
+    text-align: center;
     align-items: center;
     justify-content: flex-start;
     padding: 1em;
@@ -213,19 +209,19 @@ input:focus::placeholder {
 #searchBar__submit-btn-phone {
     display: none;
 }
- /******FILTERS & FILTER BUTTONS***********/ 
+ /******FILTERS & FILTER BUTTONS***********/
  /* box/div contenant les éléments de la barre de filtres de recherches  */
 .filter-box {
-    height: 50px; 
+    height: 50px;
     width: 758px;
-    display: flex; 
+    display: flex;
     position: relative;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 /* bouton de la barre de filtre */
 .filter-btn {
-    background-color: transparent; 
+    background-color: transparent;
     padding: 4px 19px 4px 19px;
     height: 50px;
     border-radius: 25px;
@@ -263,44 +259,52 @@ input:focus::placeholder {
 }
 /******INFO LINE***********/
 .info-box {
-    display: flex; 
+    display: flex;
     align-items: center;
     font-style: italic;
     margin-bottom: 30px;
 }
 #info-box-icon {
-    border: 1px solid var(--light-brown); 
+    border: 1px solid var(--light-brown);
     border-radius: 20px;
-    height: 24px; 
-    width: 24px; 
+    height: 24px;
+    width: 24px;
     font-size: 10px;
-    text-align: center; 
+    text-align: center;
     line-height: 19px;
-    justify-content: center; 
+    justify-content: center;
     align-self: center;
     margin-right: 4px;
 }
+/* div pour l'affichage media queries tablette et mobile */
 .filter-phone {
     display: none;
 }
 
 /***********************************************************
- CARD 
+ CARDS & CARDS CONTAINER
  ***********************************************************/
 /* See the css file "card.css" in the /css repository for the card section.  */
 /***********************************************************
  FOOTER
  ***********************************************************/
- .footer-container {
+footer {
+    height: auto;
+    box-sizing: border-box;
+    max-width: 1440px;
+    background-color: #f2f2f2;
+    margin: auto;
+}
+.footer-container {
     max-width: 1440px;
     max-height: 163px;
     display : grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 30px; 
+    margin-top: 30px;
     margin-bottom: 15px;
 }
-.a-propos {
+.footer-part {
     display:flex;
     flex-direction: column;
     height:inherit;
@@ -308,11 +312,12 @@ input:focus::placeholder {
     padding: 20px 15px 20px 15px ;
 }
 .footer-content {
-    display: inline-block; 
-} 
+    display: inline-block;
+}
  /***********************************************************
 MEDIA QUERIES
  ***********************************************************/
+ /* Media query for large Desktop, as to align items in the center */
  @media screen and (min-width:1440px) {
     body {
      align-items: center;
