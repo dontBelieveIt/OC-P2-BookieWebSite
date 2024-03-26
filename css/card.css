@@ -40,8 +40,8 @@ COMMON CONTENT FOR CARD
     font-weight: 700;
 }
 /* stars note, default definied in the .fa-solid of the ./css/style.css file, as the main-color */
-.card-rating {
-}
+/* .card-rating {
+} */
 .neutral-star {
     color: var(--main-bg-color);
 }
