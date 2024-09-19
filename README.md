@@ -6,7 +6,7 @@ This is project number 2 out of 8 from the Web Developer program at OpenClassroo
 1. Front-end Development: Designed using HTML and CSS.
 2. Booking Website Layout: Features a clean and responsive design for a travel booking platform.
   
-##Installation
+## Installation
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
 3. Run:
