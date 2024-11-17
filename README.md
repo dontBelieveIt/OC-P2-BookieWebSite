@@ -5,6 +5,10 @@ This is project number 2 out of 8 from the Web Developer program at OpenClassroo
 ## Features
 1. Front-end Development: Designed using HTML and CSS.
 2. Booking Website Layout: Features a clean and responsive design for a travel booking platform.
+
+## Demo
+[link here](https://dontbelieveit.github.io/OC-P2-BookieWebSite/). 
+Note that this website is appearance only. The research bar is not functionnal, nor is the filter function implemented. 
   
 ## Installation
 1. Clone this repository to your local machine.
