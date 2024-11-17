@@ -7,7 +7,7 @@ This is project number 2 out of 8 from the Web Developer program at OpenClassroo
 2. Booking Website Layout: Features a clean and responsive design for a travel booking platform.
 
 ## Demo
-[link here](https://dontbelieveit.github.io/OC-P2-BookieWebSite/). 
+To see what the website (Booki) looks like, click : [here](https://dontbelieveit.github.io/OC-P2-BookieWebSite/). 
 Note that this website is appearance only. The research bar is not functionnal, nor is the filter function implemented. 
   
 ## Installation
